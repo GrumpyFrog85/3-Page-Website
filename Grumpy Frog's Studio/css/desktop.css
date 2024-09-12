@@ -1,0 +1,170 @@
+/*Body Styling*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6A9C89;
+  margin: 0;
+  color: black;
+  padding-top: 80px;
+  overflow: auto;
+  padding-bottom: 60px; /* Added padding to prevent footer overlap */
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure header is above other content */
+}
+
+/* Remove default list styling from ul */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset default margins for list items */
+li {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar Styling */
+.navbar {
+    background-color: #16423C;
+    width: 100%;
+/*    padding-bottom: 5px;*/
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.brand {
+    font-family: Lucida Handwriting, sans-serif;
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+/* Hover effect */
+.nav-menu a:hover {
+    color: #ff6347; 
+}
+/* Active page link style */
+.nav-menu .active {
+    border-bottom: 3px solid greenyellow;
+}
+/* Hamburger Icon */
+.hamburger-icon {
+    display: none;
+    /*font-size: 25px;
+    color: white;
+    cursor: pointer;*/
+}
+
+.photo {
+    margin-top: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+
+.text {
+    width: 100%;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+/* Styling the container */
+.container {
+  display: flex;           /* Flexbox layout */
+  justify-content: space-between; /* Align boxes to the left and right edges of the container */
+  width: 80%;              /* Takes up 80% of the screen width */
+  margin: 0 auto;          /* Centers the container horizontally */
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Box Styling */
+.box {
+  width: 45%;              /* Each box takes 40% of the container width */
+  padding: 20px;
+  background-color: #C4DAD2;
+  border-radius: 5px;
+}
+
+/*Form Styling*/
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.consoles {
+    width: 250px;
+    height:150px;
+    padding: 5px;
+}
+article {
+  width: 80%;              /* Takes up 80% of the screen width */
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+iframe {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*Footer Styling*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #16423C;
+    color: white;
+    text-align: center;
+    z-index: 1000; /* Ensure footer is above other content */
+}

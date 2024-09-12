@@ -1,0 +1,25 @@
+/* Responsive Design for Tablet Screens */
+@media (max-width: 768px) {
+
+.brand {
+    font-family: Lucida Handwriting, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+li {
+    font-size: 0.8em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+.box {
+    width: 40%;              /* Each box takes 40% of the container width */
+    padding: 20px;
+    background-color: #C4DAD2;
+    border-radius: 5px;
+}
+
+}

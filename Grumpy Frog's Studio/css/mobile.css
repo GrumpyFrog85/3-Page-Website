@@ -1,0 +1,9 @@
+/* Responsive Design for Mobile Screens */
+@media (max-width: 360px) {
+/*Style the body*/
+body {
+    background-color: red;
+    margin: 0;          /*default override*/
+    padding: 0;         /*default override*/
+  }
+}
