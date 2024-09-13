@@ -97,22 +97,22 @@ li {
 
 /* Styling the container */
 .container {
-  display: flex;           /* Flexbox layout */
-  justify-content: space-between; /* Align boxes to the left and right edges of the container */
-  width: 80%;              /* Takes up 80% of the screen width */
-  margin: 0 auto;          /* Centers the container horizontally */
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+    display: flex;           /* Flexbox layout */
+    justify-content: space-between; /* Align boxes to the left and right edges of the container */
+    width: 80%;              /* Takes up 80% of the screen width */
+    margin: 0 auto;          /* Centers the container horizontally */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /* Box Styling */
 .box {
-  width: 45%;              /* Each box takes 40% of the container width */
-  padding: 20px;
-  background-color: #C4DAD2;
-  border-radius: 5px;
+    width: 45%;              /* Each box takes 40% of the container width */
+    padding: 20px;
+    background-color: #C4DAD2;
+    border-radius: 5px;
 }
 
 /*Form Styling*/
@@ -127,7 +127,7 @@ textarea {
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
 }
-
+/*Submit Button Styling*/
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -143,17 +143,30 @@ input[type="submit"] {
     height:150px;
     padding: 5px;
 }
+
 article {
-  width: 80%;              /* Takes up 80% of the screen width */
-  margin: 0 auto;
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-iframe {
+    width: 80%;              /* Takes up 80% of the screen width */
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    padding: 5px;
+}
+
+/*Video Styling*/
+.iframe {
+    display: inline;           /* Flexbox layout */
+    justify-content: space-between; /* Align boxes to the left and right edges of the container */
+    width: 80%;              /* Takes up 80% of the screen width */
+    margin: 0 auto;          /* Centers the container horizontally */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 45%;              /* Each box takes 45% of the width */
+    border-radius: 5px;
+
 }
 
 /*Footer Styling*/

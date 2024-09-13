@@ -22,4 +22,24 @@ h2 {
     border-radius: 5px;
 }
 
+/*Video Styling*/
+.iframe {
+    display: block;           /* Block layout */
+    width: 90%;              /* Takes up 80% of the screen width */
+    margin: 0 auto;          /* Centers the container horizontally */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 100%;              /* Each iframe takes 100% of the container width */
+    border-radius: 5px;
+
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+
 }
