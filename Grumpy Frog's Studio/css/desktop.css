@@ -30,6 +30,10 @@ li {
   margin: 0;
   padding: 0;
 }
+
+h2 {
+    text-align: center;
+}
 /* Navbar Styling */
 .navbar {
     background-color: #16423C;
@@ -45,7 +49,7 @@ li {
 }
 
 .brand {
-    font-family: Lucida Handwriting, sans-serif;
+    font-family: "Lucida Handwriting", sans-serif;
     color: white;
     font-size: 1.5em;
 }
@@ -139,6 +143,7 @@ input[type="submit"] {
 }
 
 .consoles {
+    float: left;
     width: 250px;
     height:150px;
     padding: 5px;
@@ -154,19 +159,17 @@ article {
 }
 
 /*Video Styling*/
-.iframe {
-    display: inline;           /* Flexbox layout */
-    justify-content: space-between; /* Align boxes to the left and right edges of the container */
-    width: 80%;              /* Takes up 80% of the screen width */
-    margin: 0 auto;          /* Centers the container horizontally */
-    padding: 10px;
-    border-radius: 5px;
+.iframe-container {
+    text-align: center;
 }
 
 iframe {
-    width: 45%;              /* Each box takes 45% of the width */
+    display: inline-block;
+    width: 45%; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    margin: 10px; /* Space between iframes */
     border-radius: 5px;
-
+    border: none;
 }
 
 /*Footer Styling*/
