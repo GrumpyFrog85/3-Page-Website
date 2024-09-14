@@ -25,6 +25,12 @@ ul {
   padding: 0;
 }
 
+.indie-lists {
+    list-style-type: square;
+    padding-left: 50px;
+    line-height: 2em;
+}
+
 /* Reset default margins for list items */
 li {
   margin: 0;
@@ -33,6 +39,10 @@ li {
 
 h2 {
     text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
 }
 /* Navbar Styling */
 .navbar {
