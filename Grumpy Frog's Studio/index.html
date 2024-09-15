@@ -7,32 +7,54 @@
   <meta name="keywords" content="html, css, javascript, developer, retro game consoles, indie game developer">
   <meta name="author" content="Andy Webb">
 	<link rel="stylesheet" type="text/css" href="css/desktop.css">
-	<link rel="stylesheet" type="text/css" href="css/tablet.css">
+  <link rel="stylesheet" type="text/css" href="css/tablet.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<title>Grumpy Frog's Studio - Home</title>
 </head>
 <body>
 	<header>
-		<nav class="navbar">
-      	<div class="nav-container">
+      <div class="nav-container"><!-- Desktop Nav Bar Start -->
         <div class="brand">Grumpy Frog's Studio</div>
-        <div class="hamburger-icon" id="hamburger-icon"> &#9776;</div> <!-- html hamburger entity-->
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="active">Home</a></li>
+        <nav class="navbar" id="nav-menu">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="retroconsoles.html">Retro Consoles</a></li>
           <li><a href="indiegame.html">Indie Game Development</a></li>
         </ul>
-      </div>
-    </nav>
-	</header>
+        </nav>
+      </div><!-- Desktop Nav Bar End -->
+      
+      <div class="tablet-container"><!-- Tablet Nav Bar Start -->
+        <div class="brand">Grumpy Frog's Studio</div>
+        <nav class="tablet-navbar">
+        <ul class="tablet-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="retroconsoles.html">Retro Consoles</a></li>
+          <li><a href="indiegame.html">Indie Game Development</a></li>
+        </ul>
+        </nav>
+      </div><!-- Tablet Nav Bar End -->
+      
+     <div class="mobile-container"><!-- Mobile Nav Bar -->
+          <div class="brand">Grumpy Frog's Studio</div>
+          <div class="hamburger-icon" id="hamburger-icon"> &#9776;</div>
+          <nav id="mobile-links" class="mobile-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="retroconsoles.html">Retro Consoles</a></li>
+              <li><a href="indiegame.html">Indie Game Development</a></li>
+            </ul>
+          </nav>
+        </div><!-- Mobile Nav Bar End -->
+  </header>
 
-	<div class="container">
+  <div class="container">
     <img src="images/mypicture.png" alt="picture of Andy" class="photo">
     <div class="text">
       <h1>Welcome to Grumpy Frog's Studio</h1>
       <p>I'm Andy, a passionate web development student eager to bring creativity and functionality to the web. With a growing skillset in HTML, CSS, JavaScript, and modern frameworks, I'm constantly learning and building projects that solve real-world problems. Here, you'll find my latest work, showcasing my dedication to clean design, responsive layouts, and user-friendly experiences.</p>
       <p>Growing up with a ZX Spectrum, Master System II, Mega Drive & the SNES, was like living at the crossroads of gaming evolution. Each console brought something new, from the simple charm of pixelated adventures to the more sophisticated worlds, making every leap in technology feel like a window into the future.</p>
-  	</div>
+    </div>
   </div>
 
   <div class="container">
@@ -60,10 +82,10 @@
     </div>
   </div>
 
-	<footer>
+  <footer>
     <p>&copy; <span id="year"></span> Copyright Grumpy Frog's Studio</p>
   </footer>
-<script src="js/scripts.js"></script>
-</body>
 
+</body>
+<script src="js/scripts.js"></script>
 </html>

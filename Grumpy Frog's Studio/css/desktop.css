@@ -1,12 +1,11 @@
-/*Body Styling*/
 body {
-  font-family: Arial, sans-serif;
-  background-color: #6A9C89;
-  margin: 0;
-  color: black;
-  padding-top: 80px;
-  overflow: auto;
-  padding-bottom: 60px; /* Added padding to prevent footer overlap */
+    font-family: Arial, sans-serif;
+    background-color: #6A9C89;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    padding-top: 60px;
+    padding-bottom: 60px; /* Prevent footer overlap */
 }
 
 /* Header Styling */
@@ -18,98 +17,71 @@ header {
   z-index: 1000; /* Ensure header is above other content */
 }
 
-/* Remove default list styling from ul */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Brand styling */
+.brand {
+    font-family: Lucida Handwriting, sans-serif;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
 }
 
-.indie-lists {
-    list-style-type: square;
-    padding-left: 50px;
-    line-height: 2em;
+.tablet-container{
+    display: none;
 }
 
-/* Reset default margins for list items */
-li {
-  margin: 0;
-  padding: 0;
+.mobile-container{
+    display: none;
 }
 
-h2 {
-    text-align: center;
-}
 
-h4 {
-    text-decoration: underline;
-}
-/* Navbar Styling */
-.navbar {
-    background-color: #16423C;
-    width: 100%;
-/*    padding-bottom: 5px;*/
-}
-
+/* Navigation Container: Flexbox setup */
 .nav-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    justify-content: space-between;  /* Space between items */
+    align-items: center;  /* Vertically align items */
+    background-color: #16423C;
 }
 
-.brand {
-    font-family: "Lucida Handwriting", sans-serif;
+/* Navbar styling */
+.navbar {
+    font-size: 1em;
     color: white;
-    font-size: 1.5em;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-}
-
-.nav-menu li {
-    margin-left: 20px;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
+    cursor: pointer;
     padding: 10px;
-    transition: color 0.3s;
 }
+
+/* Nav menu aligned to the right */
+.nav-menu {
+    display: flex;  /* Make sure items are aligned horizontally */
+    gap: 20px;  /* Add spacing between the items */
+}
+
+/* List Styling */
+.navbar ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Horizontally align list items */
+    gap: 50px;  /* Add spacing between the items */
+}
+
+/* Nav menu links */
+.nav-menu a {
+    text-decoration: none; /* Removes the underline */
+    color: white;
+/*    padding: 10px;*/
+    text-align: center;
+    display: block;
+}
+
 /* Hover effect */
 .nav-menu a:hover {
     color: #ff6347; 
 }
-/* Active page link style */
-.nav-menu .active {
-    border-bottom: 3px solid greenyellow;
-}
-/* Hamburger Icon */
-.hamburger-icon {
-    display: none;
-    /*font-size: 25px;
-    color: white;
-    cursor: pointer;*/
-}
 
-.photo {
-    margin-top: 20px;
-    width: 150px;
-    height: 200px;
-    border-radius: 5px;
+/*End of Nav Styling*/
 
-}
-
-.text {
-    width: 100%;
-    margin-left: 20px;
-    padding: 5px;
-}
-
-/* Styling the container */
+/*Container Styling*/
 .container {
     display: flex;           /* Flexbox layout */
     justify-content: space-between; /* Align boxes to the left and right edges of the container */
@@ -121,12 +93,34 @@ h4 {
     border-radius: 5px;
 }
 
+/*Photo Styling*/
+.photo {
+    margin-top: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.text {
+    width: 100%;
+    margin-left: 20px;
+    padding: 5px;
+}
+
 /* Box Styling */
 .box {
     width: 45%;              /* Each box takes 40% of the container width */
     padding: 20px;
     background-color: #C4DAD2;
     border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
 }
 
 /*Form Styling*/
@@ -152,13 +146,6 @@ input[type="submit"] {
     float: right;
 }
 
-.consoles {
-    float: left;
-    width: 250px;
-    height:150px;
-    padding: 5px;
-}
-
 article {
     width: 80%;              /* Takes up 80% of the screen width */
     margin: auto;
@@ -166,6 +153,13 @@ article {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+}
+
+.consoles {
+    float: left;
+    width: 250px;
+    height:150px;
+    padding: 5px;
 }
 
 /*Video Styling*/
@@ -181,6 +175,7 @@ iframe {
     border-radius: 5px;
     border: none;
 }
+
 
 /*Footer Styling*/
 footer {

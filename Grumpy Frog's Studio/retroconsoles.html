@@ -7,26 +7,48 @@
   <meta name="keywords" content="html, css, javascript, developer, retro game consoles, indie game developer">
   <meta name="author" content="Andy Webb">
 	<link rel="stylesheet" type="text/css" href="css/desktop.css">
-	<link rel="stylesheet" type="text/css" href="css/tablet.css">
+  <link rel="stylesheet" type="text/css" href="css/tablet.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<title>Grumpy Frog's Studio - Retro Consoles</title>
 </head>
 <body>
 	<header>
-		<nav class="navbar">
-      	<div class="nav-container">
+      <div class="nav-container"><!-- Desktop Nav Bar Start -->
         <div class="brand">Grumpy Frog's Studio</div>
-        <div class="hamburger-icon" id="hamburger-icon"> &#9776;</div> <!-- html hamburger entity-->
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="retroconsoles.html" class="active">Retro Consoles</a></li>
+        <nav class="navbar" id="nav-menu">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="retroconsoles.html">Retro Consoles</a></li>
           <li><a href="indiegame.html">Indie Game Development</a></li>
         </ul>
-      </div>
-    </nav>
-	</header>
-  
-    <article>
+        </nav>
+      </div><!-- Desktop Nav Bar End -->
+      
+      <div class="tablet-container"><!-- Tablet Nav Bar Start -->
+        <div class="brand">Grumpy Frog's Studio</div>
+        <nav class="tablet-navbar">
+        <ul class="tablet-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="retroconsoles.html">Retro Consoles</a></li>
+          <li><a href="indiegame.html">Indie Game Development</a></li>
+        </ul>
+        </nav>
+      </div><!-- Tablet Nav Bar End -->
+      
+     <div class="mobile-container"><!-- Mobile Nav Bar -->
+          <div class="brand">Grumpy Frog's Studio</div>
+          <div class="hamburger-icon" id="hamburger-icon"> &#9776;</div>
+          <nav id="mobile-links" class="mobile-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="retroconsoles.html">Retro Consoles</a></li>
+              <li><a href="indiegame.html">Indie Game Development</a></li>
+            </ul>
+          </nav>
+        </div><!-- Mobile Nav Bar End -->
+  </header>
+
+  <article>
       <h1>Sega Master System II</h1>
       <img src="images/mastersystem.png" alt="Master System Console" class="consoles">
         
@@ -40,10 +62,8 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BHez3iJePI4?si=qGjsYtG0_0DqLjhl" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
     </article>
-    
-  
-  
-  <article>
+
+    <article>
     <h1>Sega Mega Drive</h1>
     <img src="images/megadrive.png" alt="Mega Drive Console" class="consoles">
       <p>The Sega Mega Drive, known as the Genesis in North America, debuted in 1988 and quickly became a cornerstone of the 16-bit gaming era. Boasting a powerful Motorola 68000 CPU and an advanced graphics processor, the Mega Drive delivered vibrant, fast-paced gaming experiences that captivated audiences worldwide.<br> Its diverse game library included legendary titles such as 
@@ -70,10 +90,10 @@
       </div>
   </article>
 
-	<footer>
+  <footer>
     <p>&copy; <span id="year"></span> Copyright Grumpy Frog's Studio</p>
   </footer>
-<script src="js/scripts.js"></script>
-</body>
 
+</body>
+<script src="js/scripts.js"></script>
 </html>

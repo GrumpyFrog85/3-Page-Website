@@ -1,27 +1,74 @@
 /* Responsive Design for Mobile Screens */
 @media (max-width: 360px) {
 /*Style the body*/
-body {
-    background-color: red;
-    margin: 0;          /*default override*/
-    padding: 0;         /*default override*/
-    padding-bottom: 60px;
+    body {
+        background-color: #6A9C89;
+        margin: 0;          /*default override*/
+        padding: 0;         /*default override*/
+        padding-bottom: 60px;
+        }
+
+/*    Mobile Nav Bar*/
+    .brand {
+        font-family: Lucida Handwriting, sans-serif;
+        color: white;
+        font-size: 1em;
+        padding: 10px;
     }
 
-  /* Hamburger Icon */
-.hamburger-icon {
-/*    display: none;*/
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
+    .nav-container{
+        display: none;
     }
 
-/*Video Styling*/
-iframe {
-    border-radius: 10px;
-    padding: 5px;
-    width: 100%;
-    height: 100%;
-    display: block;
+    .tablet-container{
+        display: none;
     }
+
+    .mobile-container {
+        display: flex;
+        justify-content: space-between;  /* Space between items pushes them to opposite sides */
+        align-items: center;  /* Align items vertically in the center */
+        background-color: #16423C;
+        position: relative;
+    }
+
+    .hamburger-icon {
+        font-size: 1em;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .mobile-links {
+        display: none; /* Hides the links */
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: #16423C;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-links ul {
+        list-style-type: none; /* Remove default bullets */
+        padding: 5px;
+    }
+
+    .mobile-links a {
+        text-decoration: none; /*removes the underline*/
+        color: white;
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .mobile-links a:hover {
+        color: #ff6347;
+    }
+
+/*End of Nav Styling*/
+
+
+
+
 }

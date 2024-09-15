@@ -1,45 +1,79 @@
 /* Responsive Design for Tablet Screens */
 @media (max-width: 768px) {
+    body {
+        background-color: #6A9C89;
+        margin: 0;
+        padding: 0;
+    }
 
-.brand {
-    font-family: Lucida Handwriting, sans-serif;
-    color: white;
-    font-size: 1em;
-}
+    /* Brand styling */
+    .brand {
+        font-family: Lucida Handwriting, sans-serif;
+        color: white;
+        font-size: 1em;
+        padding: 10px;
+        text-align: center; /* Center brand text */
+    }
 
-li {
-    font-size: 0.8em;
-}
+    .nav-container {
+        display: none;
+    }
 
-h2 {
-    font-size: 1em;
-}
+    /* Hide mobile container by default */
+    .mobile-container {
+        display: none;
+    }
 
-.box {
-    width: 40%;              /* Each box takes 40% of the container width */
-    padding: 20px;
-    background-color: #C4DAD2;
-    border-radius: 5px;
-}
+    /* Navigation Container: Flexbox setup */
+    .tablet-container {
+        display: flex;
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;  /* Center items horizontally */
+        background-color: #16423C;
+    }
 
-/*Video Styling*/
-.iframe {
-    display: block;           /* Block layout */
-    width: 90%;              /* Takes up 80% of the screen width */
-    margin: 0 auto;          /* Centers the container horizontally */
-    padding: 10px;
-    border-radius: 5px;
-}
+    /* Navbar styling */
+    .tablet-navbar {
+        font-size: 1em;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
 
-iframe {
-    width: 100%;              /* Each iframe takes 100% of the container width */
-    border-radius: 5px;
+    /* Center nav-menu within the nav-container */
+    .tablet-menu {
+        display: flex;  /* Align menu items horizontally */
+        justify-content: space-between;  /* Evenly distribute items */
+        width: 100%;
+        max-width: 768px;  /* Set a max width to control the overall size */
+        padding: 0 20px;  /* Add padding for space on smaller screens */
+        margin: 0 auto;  /* Center the menu container horizontally */
+    }
 
-}
+    /* List Styling */
+    .tablet-navbar ul {
+        list-style-type: none; /* Remove default bullets */
+        padding: 0;
+        margin: 0;
+        display: flex;  /* Horizontally align list items */
+        gap: 50px;  /* Add spacing between the items */
+    }
 
-footer {
-    font-size: 0.8em;
-}
+    /* Nav menu links */
+    .tablet-menu a {
+        text-decoration: none; /* Removes the underline */
+        color: white;
+        text-align: center;
+        display: block;
+    }
+
+    /* Hover effect */
+    .tablet-menu a:hover {
+        color: #ff6347;
+    }
+
+/*End of Nav Styling*/
 
 
+    
 }
