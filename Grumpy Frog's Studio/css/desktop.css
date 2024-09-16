@@ -1,20 +1,18 @@
+/* Basic reset for margin and padding */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #6A9C89;
     margin: 0;
     padding: 0;
     overflow: auto;
-    padding-top: 60px;
-    padding-bottom: 60px; /* Prevent footer overlap */
+    background-color: #6A9C89;
+    font-family: Arial, sans-serif;
 }
 
-/* Header Styling */
+/* Styling for header */
 header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; /* Ensure header is above other content */
+    background-color: #16423C;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;   
 }
 
 /* Brand styling */
@@ -79,48 +77,73 @@ header {
     color: #ff6347; 
 }
 
-/*End of Nav Styling*/
+/*--------------- End of Nav Styling ---------------------*/
+
+
 
 /*Container Styling*/
 .container {
-    display: flex;           /* Flexbox layout */
-    justify-content: space-between; /* Align boxes to the left and right edges of the container */
-    width: 80%;              /* Takes up 80% of the screen width */
-    margin: 0 auto;          /* Centers the container horizontally */
-    background-color: #f0f0f0;
+    max-width: 80%;
+    margin: 0 auto;
     padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
     margin-bottom: 20px;
+    background-color: #f0f0f0;
     border-radius: 5px;
 }
 
 /*Photo Styling*/
 .photo {
-    margin-top: 20px;
+    float: left;
+    margin-right: 20px;
     width: 150px;
-    height: 200px;
+    height: auto;
     border-radius: 5px;
 }
 
-.text {
-    width: 100%;
-    margin-left: 20px;
-    padding: 5px;
+.consoles {
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 25px;
 }
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Optional: Adds space between the boxes */
+  }
 
 /* Box Styling */
 .box {
-    width: 45%;              /* Each box takes 40% of the container width */
+    width: 45%;             /* Each box takes 45% of the container width */
     padding: 20px;
     background-color: #C4DAD2;
     border-radius: 5px;
+    display: inline-block;
+    flex: 1;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 h2 {
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
 h4 {
     text-decoration: underline;
+}
+
+p {
+/*    text-align: justify;*/
 }
 
 /*Form Styling*/
@@ -146,20 +169,12 @@ input[type="submit"] {
     float: right;
 }
 
-article {
-    width: 80%;              /* Takes up 80% of the screen width */
-    margin: auto;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
 .consoles {
     float: left;
+    margin-right: 20px;
     width: 250px;
-    height:150px;
-    padding: 5px;
+    height: 150px;
+    border-radius: 5px;
 }
 
 /*Video Styling*/
@@ -176,16 +191,12 @@ iframe {
     border: none;
 }
 
-
 /*Footer Styling*/
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    background-color: #16423C;
-    color: white;
-    text-align: center;
-    z-index: 1000; /* Ensure footer is above other content */
-}
+      background-color: #16423C;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+
