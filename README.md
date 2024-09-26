@@ -1,1 +1,0 @@
-# Grumpy Frog's Studio
