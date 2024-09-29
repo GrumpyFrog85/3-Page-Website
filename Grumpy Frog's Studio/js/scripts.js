@@ -15,3 +15,16 @@ document.getElementById("hamburger-icon").addEventListener("click", function() {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Model Script
+
+var modal = document.getElementById("myModal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementById("closeModal");
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }

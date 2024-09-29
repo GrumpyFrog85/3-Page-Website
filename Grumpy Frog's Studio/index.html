@@ -50,9 +50,10 @@
 
   <article class="container">
     <img src="images/mypicture.png" alt="picture of Andy" class="photo">
-    <h1>Welcome to Grumpy Frog's Studio</h1>
+    <h2 class="welcome">Welcome to Grumpy Frog's Studio</h2>
     <p>I'm Andy, a passionate web development student eager to bring creativity and functionality to the web. With a growing skillset in HTML, CSS, JavaScript, and modern frameworks, I'm constantly learning and building projects that solve real-world problems. Here, you'll find my latest work, showcasing my dedication to clean design, responsive layouts, and user-friendly experiences.</p>
     <p>Growing up with a ZX Spectrum, Master System II, Mega Drive & the SNES, was like living at the crossroads of gaming evolution. Each console brought something new, from the simple charm of pixelated adventures to the more sophisticated worlds, making every leap in technology feel like a window into the future.</p>
+    <button class="newsletter" id="openModal">Read Newsletter</button>
   </article>
 
   <article class="container">
@@ -81,11 +82,47 @@
   </div>
 </div>
 </article>
+<!-- Model Start -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">X</span>
+            <h1 class="news-brand">The Grumpy Times</h1>
+            <div class="date-container">
+              <hr>
+                <p class="date">September 2024</p>
+                <hr>
+            </div>
+            <h3>New Pixel Art Assets!</h3>
+            <p>Here are the latest 64px x 64px assets, A Stone Mine, A Marble Mine & A House. If you would like to use them in your projects please feel free too, but please give attribute to "Grumpy Frog's Studio.</p>
+            <div class="art-row">
+              <div class="art-column">
+                <img src="images/stonemine.png" alt="Stone Mine">
+              </div>
+              <div class="art-column">
+                <img src="images/marblemine.png" alt="Marble Mine">
+              </div>
+              <div class="art-column">
+                <img src="images/house.png" alt="House">
+              </div>
+              <div class="art-column">
+                <img src="images/starwell.png" alt="Star Water Well">
+              </div>
+              <div class="art-column">
+                <img src="images/sign.png" alt="! Sign">
+              </div>
+            </div>
 
+
+            <h3>Whats In Planning?</h3>
+            <p>Exciting news has just landed within the studio, the next project planned is going too be our version of the classic arcade game.....Pac-Man. Planned release date : 27th October 2024</p>
+            <div><img src="images/pac-man.gif" alt="Pac-man Animation" class="pacman"></div>
+            <div class="thanks"><p>(Thanks to Gifer for the animation)</p></div>
+        </div>
+    </div>
+<!-- Model End -->
   <footer>
     &copy; <span id="year"></span> Copyright Grumpy Frog's Studio
   </footer>
-
-</body>
 <script src="js/scripts.js"></script>
+</body>
 </html>

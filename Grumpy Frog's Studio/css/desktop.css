@@ -17,7 +17,7 @@ header {
 
 /* Brand styling */
 .brand {
-    font-family: Lucida Handwriting, sans-serif;
+    font-family: "Lucida Handwriting", sans-serif;
     color: white;
     font-size: 1em;
     padding: 10px;
@@ -127,6 +127,10 @@ header {
     flex: 1;
 }
 
+.welcome {
+    text-align: left;
+}
+
 h1 {
     margin: 0;
     margin-bottom: 20px;
@@ -199,4 +203,88 @@ footer {
       padding: 20px 0;
     }
 
+/*Model Styling*/
 
+.newsletter {
+    background-color: #4CAF50;
+    color: white;
+    margin: 0px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+ .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: #6A9C89;
+            color: white;
+            margin: 20px auto; 
+            padding: 20px;
+            border: 3px solid white;
+            border-radius: 5px;
+            width: 60%; 
+        }
+
+        .close {
+            color: red;
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .date-container {
+            text-align: right;
+            margin-bottom: 10px; /* Space between date and content */
+        }
+
+        .news-brand {
+            font-family: "Lucida Handwriting", sans-serif;
+            font-size: 2em;
+        }
+
+        .art-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 74px);
+            grid-gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .art-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 74px;
+            height: 74px;
+        }
+
+        .art-column img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .pacman {
+            width: 25%;
+            height: 25%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .thanks {
+            text-align: center;
+            font-size: .8em;
+        }
